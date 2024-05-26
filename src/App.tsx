@@ -34,7 +34,6 @@ function App() {
             leftSlot={!authToken ? <Login onSuccess={setAuthToken}/> : <Controls values={values} setValues={setValues}/>}
             rightSlot={authToken ? <GoogleMaps filterValues={values} authToken={authToken}/> : <></>}
           />
-        <script async defer src='//maps.googleapis.com/maps/api/js?callback=initMap'></script>
       </QueryClientProvider>
     </GoogleOAuthProvider>
   )
