@@ -9,9 +9,9 @@ type TProps = {
 
 export const Controls = ({ values, setValues }: TProps) => {
     return (
-        <Stack gap="16px" width="100%">
+        <Stack gap="24px" width="100%">
             <RangeSlider
-                title="conversion"
+                title="Конверсия"
                 leftValue={values.conversion[0]}
                 rightValue={values.conversion[1]}
                 min={0}
@@ -21,7 +21,7 @@ export const Controls = ({ values, setValues }: TProps) => {
                 onChange={(value: number[]) => setValues({...values, conversion: value})}
             />
             <RangeSlider
-                title="footage"
+                title="Площадь магазина (кв.м.)"
                 leftValue={values.footage[0]}
                 rightValue={values.footage[1]}
                 min={100}
@@ -31,7 +31,7 @@ export const Controls = ({ values, setValues }: TProps) => {
                 onChange={(value: number[]) => setValues({...values, footage: value})}
             />
             <RangeSlider
-                title="revenue"
+                title="Прибыль (руб.)"
                 leftValue={values.revenue[0]}
                 rightValue={values.revenue[1]}
                 min={100000}
@@ -41,7 +41,7 @@ export const Controls = ({ values, setValues }: TProps) => {
                 onChange={(value: number[]) => setValues({...values, revenue: value})}
             />
             <RangeSlider
-                title="receipt"
+                title="Средний чек (руб.)"
                 leftValue={values.receipt[0]}
                 rightValue={values.receipt[1]}
                 min={0}
