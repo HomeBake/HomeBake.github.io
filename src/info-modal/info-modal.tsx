@@ -35,7 +35,7 @@ export const InfoModal = ({ isOpen, activeMarker, onClose }: TProps) => {
                         justifyContent="space-between"
                         marginTop="8px">
                         <Typography variant="caption" color="black">
-                            Conversion
+                            Конверсия
                         </Typography>
                         <Typography variant="caption" color="black" width="50%">
                             {activeMarker?.data.conversion}
@@ -43,7 +43,7 @@ export const InfoModal = ({ isOpen, activeMarker, onClose }: TProps) => {
                     </Stack>
                     <Stack direction="row" justifyContent="space-between">
                         <Typography variant="caption" color="black">
-                            footage
+                            Площадь магазина (кв.м.)
                         </Typography>
                         <Typography variant="caption" color="black" width="50%">
                             {activeMarker?.data.footage}
@@ -51,7 +51,7 @@ export const InfoModal = ({ isOpen, activeMarker, onClose }: TProps) => {
                     </Stack>
                     <Stack direction="row" justifyContent="space-between">
                         <Typography variant="caption" color="black">
-                            receipt
+                            Прибыль (руб.)
                         </Typography>
                         <Typography variant="caption" color="black" width="50%">
                             {activeMarker?.data.receipt}
@@ -59,7 +59,7 @@ export const InfoModal = ({ isOpen, activeMarker, onClose }: TProps) => {
                     </Stack>
                     <Stack direction="row" justifyContent="space-between">
                         <Typography variant="caption" color="black">
-                            revenue
+                            Средний чек (руб.)
                         </Typography>
                         <Typography variant="caption" color="black" width="50%">
                             {activeMarker?.data.revenue}
