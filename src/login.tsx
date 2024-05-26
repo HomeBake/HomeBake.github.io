@@ -7,5 +7,5 @@ type TProps = {
 
 export const Login = ({onSuccess}: TProps) => {
     const login = useGoogleLogin({scope: 'https://www.googleapis.com/auth/cloud-platform', onSuccess: data => onSuccess(data.access_token)})
-    return  <Button sx={{textTransform: "none"}} variant="contained" onClick={() => login()}>Войти с помошью гугл</Button>
+    return  <Button sx={{textTransform: "none"}} variant="contained" onClick={() => login()}>Войти с помощью гугл</Button>
 }
